@@ -1,42 +1,87 @@
 import React, { Component } from 'react';
+// import { buildUrl } from '../connections/urls';
+// import { isUserWhitespacable } from '@babel/types';
 
-export default class Profiles extends Component {
+//import ProfileInput from './admin-inputs/profile-input';
+
+//import ProfileForm from './sub-profiles';
+
+import { Jumbotron } from 'reactstrap';
+
+class Profiles extends Component {
+	// constructor(props) {
+	// 	super(props);
+	// 	this.state = {
+	// 		data: null,
+	// 	};
+	// }
+
+	// componentDidMount() {
+	// 	fetch('http://localhost:8080/routes/profiles.js')
+	// 		.then(response => response.json())
+	// 		.then(data => this.setState({ data }));
+	// }
+
 	render() {
 		return (
 			<div>
 				<section className='colorlib-about' data-section='about'>
 					<div className='colorlib-narrow-content'>
 						<div className='row'>
-							<div className='col-md-12'>
+							<div className='col-sm-12'>
 								<div
 									className='row row-bottom-padded-sm animate-box'
 									data-animate-effect='fadeInLeft'>
-									<div className='col-md-12'>
-										<div className='about-desc'>
-											<span className='heading-meta'>
-												About Us
-											</span>
-											<h2 className='colorlib-heading'>
-												Who Am I?
+									<div className='col-sm-12'>
+										<Jumbotron>
+											<h2>
+												Testing Bootstrap Components
 											</h2>
+										</Jumbotron>
+
+										<div className='about-desc'>
+											<span className='heading-meta'></span>
+											<h2 className='colorlib-heading'>
+												About Me
+											</h2>
+
 											<p>
-												I am a computer grad student
-												from DAIICT-Gandhinagar with ICT
-												as my major.I love exploring new
-												technologies and often amazed by
-												the progress we as a human
-												species have mad so far in the
-												recent years (apart from the
-												headphone-jack part!!)
+												Front End Developer with over 4
+												years of experience actively
+												collaborating with development
+												teams to produce and modernize
+												world-class, enterprise-quality
+												web applications, web portals
+												and web sites. I am a proponent
+												of user-centered design as an
+												integral part of application
+												development, especially with how
+												that translates to implementing
+												Mobile Responsive solutions that
+												are usable and possible to
+												implement.
 											</p>
 											<p>
-												I have started reflecting my
-												ideas and thougths through the
-												medium of words recently so
-												spelling and grammer mistaks are
-												very often.You can write me back
-												if you spot any and don't want
-												to live anymore :P{' '}
+												I have experience collaborating
+												across teams (Product, Design,
+												QA, Marketing, and Engineering)
+												to define, design and test
+												applications and solutions as a
+												part of the agile development
+												process. I am experienced in
+												leveraging user stories and
+												designs to build and maintain
+												viable products and applications
+												via code remediation, bug fixes,
+												and continual improvement.
+											</p>
+											<p>
+												I am accustomed to working in a
+												continuous delivery / continuous
+												integration environment;
+												leveraging pipelines and
+												automated tests for optimal
+												deployment.
 											</p>
 										</div>
 									</div>
@@ -79,7 +124,9 @@ export default class Profiles extends Component {
 										<i className='icon-phone3' />
 									</span>
 									<div className='desc'>
-										<h3>Data Structures & Algorithms</h3>
+										<h3>
+											Data Structures &amp; Algorithms
+										</h3>
 										<p>
 											As coming from the CS background, I
 											have good grasp over fundamental
@@ -125,7 +172,7 @@ export default class Profiles extends Component {
 									</div>
 								</div>
 							</div>
-							<div className='col-md-4 text-center animate-box'>
+							{/* <div className='col-md-4 text-center animate-box'>
 								<div className='services color-6'>
 									<span className='icon'>
 										<i className='icon-phone3' />
@@ -137,7 +184,7 @@ export default class Profiles extends Component {
 										</p>
 									</div>
 								</div>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</section>
@@ -145,3 +192,5 @@ export default class Profiles extends Component {
 		);
 	}
 }
+
+export default Profiles;

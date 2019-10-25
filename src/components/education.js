@@ -1,6 +1,32 @@
 import React, { Component } from 'react';
+import { buildUrl } from '../connections/urls';
+// const cors = require('cors');
 
-export default class Education extends Component {
+class Education extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			school: '',
+			course_of_study: '',
+			is_complete: '',
+			additional_info: '',
+		};
+	}
+
+	componentDidMount() {
+		let url = buildUrl('education');
+		fetch(url)
+			.then(res => res.json())
+			.then(json => {
+				this.setState({
+					school: json,
+					course_of_study: json,
+					is_complete: json,
+					additional_info: json,
+				});
+			});
+	}
+
 	render() {
 		return (
 			<div>
@@ -22,3 +48,5 @@ export default class Education extends Component {
 		);
 	}
 }
+
+export default Education;

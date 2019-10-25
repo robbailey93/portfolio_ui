@@ -34,18 +34,18 @@ export default class Projects extends Component {
 											<span>Website</span>
 											<p className='icon'>
 												<span>
-													<a href='#'>
+													<a href='work.html'>
 														<i className='icon-share3' />
 													</a>
 												</span>
 												<span>
-													<a href='#'>
+													<a href='work.html'>
 														<i className='icon-eye' />{' '}
 														100
 													</a>
 												</span>
 												<span>
-													<a href='#'>
+													<a href='work.html'>
 														<i className='icon-heart' />{' '}
 														49
 													</a>
@@ -72,18 +72,18 @@ export default class Projects extends Component {
 											<span>Animation</span>
 											<p className='icon'>
 												<span>
-													<a href='#'>
+													<a href='work.html'>
 														<i className='icon-share3' />
 													</a>
 												</span>
 												<span>
-													<a href='#'>
+													<a href='work.html'>
 														<i className='icon-eye' />{' '}
 														100
 													</a>
 												</span>
 												<span>
-													<a href='#'>
+													<a href='work.html'>
 														<i className='icon-heart' />{' '}
 														49
 													</a>
@@ -110,18 +110,18 @@ export default class Projects extends Component {
 											<span>Illustration</span>
 											<p className='icon'>
 												<span>
-													<a href='#'>
+													<a href='work.html'>
 														<i className='icon-share3' />
 													</a>
 												</span>
 												<span>
-													<a href='#'>
+													<a href='work.html'>
 														<i className='icon-eye' />{' '}
 														100
 													</a>
 												</span>
 												<span>
-													<a href='#'>
+													<a href='work.html'>
 														<i className='icon-heart' />{' '}
 														49
 													</a>
@@ -148,18 +148,18 @@ export default class Projects extends Component {
 											<span>Application</span>
 											<p className='icon'>
 												<span>
-													<a href='#'>
+													<a href='work.html'>
 														<i className='icon-share3' />
 													</a>
 												</span>
 												<span>
-													<a href='#'>
+													<a href='work.html'>
 														<i className='icon-eye' />{' '}
 														100
 													</a>
 												</span>
 												<span>
-													<a href='#'>
+													<a href='work.html'>
 														<i className='icon-heart' />{' '}
 														49
 													</a>
@@ -186,18 +186,18 @@ export default class Projects extends Component {
 											<span>Graphic, Logo</span>
 											<p className='icon'>
 												<span>
-													<a href='#'>
+													<a href='work.html'>
 														<i className='icon-share3' />
 													</a>
 												</span>
 												<span>
-													<a href='#'>
+													<a href='work.html'>
 														<i className='icon-eye' />{' '}
 														100
 													</a>
 												</span>
 												<span>
-													<a href='#'>
+													<a href='work.html'>
 														<i className='icon-heart' />{' '}
 														49
 													</a>
@@ -224,18 +224,18 @@ export default class Projects extends Component {
 											<span>Web Design</span>
 											<p className='icon'>
 												<span>
-													<a href='#'>
+													<a href='work.html'>
 														<i className='icon-share3' />
 													</a>
 												</span>
 												<span>
-													<a href='#'>
+													<a href='work.html'>
 														<i className='icon-eye' />{' '}
 														100
 													</a>
 												</span>
 												<span>
-													<a href='#'>
+													<a href='work.html'>
 														<i className='icon-heart' />{' '}
 														49
 													</a>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Sidebar extends Component {
+class Sidebar extends Component {
 	render() {
 		return (
 			<div>
@@ -39,34 +39,36 @@ export default class Sidebar extends Component {
 							<div id='navbar' className='collapse'>
 								<ul>
 									<li className='active'>
-										<a href='#home' data-nav-section='home'>
+										<a
+											href='about'
+											data-nav-section='about'>
 											Profile
 										</a>
 									</li>
 									<li>
 										<a
-											href='#skills'
+											href='skills'
 											data-nav-section='skills'>
 											Skills
 										</a>
 									</li>
 									<li>
 										<a
-											href='#projects'
+											href='projects'
 											data-nav-section='projects'>
 											Projects
 										</a>
 									</li>
 									<li>
 										<a
-											href='#work-experience'
+											href='work-experience'
 											data-nav-section='work-experience'>
 											Work Experience
 										</a>
 									</li>
 									<li>
 										<a
-											href='#education'
+											href='education'
 											data-nav-section='education'>
 											Education
 										</a>
@@ -131,3 +133,5 @@ export default class Sidebar extends Component {
 		);
 	}
 }
+
+export default Sidebar;
