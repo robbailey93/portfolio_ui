@@ -21,7 +21,7 @@ class Edit extends Component {
 
 	componentDidMount() {
 		axios
-			.get(buildUrl('profiles') + this.props.match.params.id)
+			.get(buildUrl('profiles/') + this.props.match.params.id)
 			.then(response => {
 				this.setState({
 					first_name: response.data.first_name,
@@ -64,7 +64,7 @@ class Edit extends Component {
 			about: this.state.about,
 		};
 		axios
-			.put(buildUrl('profiles') + this.props.match.params.id, obj)
+			.put(buildUrl('profiles/') + this.props.match.params.id, obj)
 			.then(res => console.log(res.data));
 
 		this.props.history.push('/index');

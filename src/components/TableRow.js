@@ -10,8 +10,8 @@ class TableRow extends Component {
 	}
 	delete() {
 		axios
-			.get('http://localhost:8080/profiles' + this.props.obj._id)
-			.then(console.log('Deleted'))
+			.delete('http://localhost:8080/profiles/' + this.props.obj._id)
+			.then(console.log('May be deleted, but check MongoDB to be sure!!'))
 			.catch(err => console.log(err));
 	}
 	render() {
@@ -23,7 +23,7 @@ class TableRow extends Component {
 				<td>{this.props.obj.about}</td>
 				<td>
 					<Link
-						to={'/edit' + this.props.obj._id}
+						to={'/edit/' + this.props.obj._id}
 						className='btn btn-primary'>
 						Edit
 					</Link>
