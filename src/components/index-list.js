@@ -4,7 +4,7 @@ import TableRow from './TableRow';
 
 //import { buildUrl } from '../connections/urls';
 
-class Index extends Component {
+class IndexList extends Component {
 	constructor(props) {
 		super(props);
 		this.state = { profiles: [] };
@@ -27,7 +27,7 @@ class Index extends Component {
 
 	render() {
 		return (
-			<div>
+			<section id='colorlib-main'>
 				<h3 align='center'>User List</h3>
 				<table
 					className='table table-striped'
@@ -43,9 +43,9 @@ class Index extends Component {
 					</thead>
 					<tbody>{this.tabRow()}</tbody>
 				</table>
-			</div>
+			</section>
 		);
 	}
 }
 
-export default Index;
+export default IndexList;

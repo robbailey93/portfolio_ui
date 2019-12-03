@@ -1,0 +1,99 @@
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.8;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+#colorlib-page {
+	font-family: 'Quicksand', Arial, sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.8;
+	color: #343a40;
+	top: 58px;
+}
+
+#colorlib-aside .author-img {
+	width: 190px;
+	height: 190px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+}
+.author-img {
+	background-size: cover;
+	background-position: center left;
+	background-repeat: no-repeat;
+	position: relative;
+	/* transform: rotate(180deg); */
+}
+
+#colorlib-aside .profile-name h2 a {
+	display: block;
+	font-size: 30px;
+	padding: 10px;
+	font-weight: 400;
+	color: #343a40;
+}
+#colorlib-aside .email {
+	display: block;
+	font-size: 12px;
+	padding-top: 10px;
+}
+#colorlib-aside .number {
+	display: block;
+	margin-bottom: 2em;
+	font-size: 12px;
+}
+
+.dynamic-content {
+	margin: 20px 0;
+}
+
+.colorlib-heading-new h2 {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 18px;
+	margin-bottom: 1.5em;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	line-height: 1.5;
+	color: #343a40;
+	position: relative;
+}
+
+.colorlib-sub-heading {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 15px;
+	margin-bottom: 15px;
+	font-weight: 500;
+	text-transform: none;
+	letter-spacing: 2px;
+	line-height: 1.5;
+	color: #343a40;
+	position: relative;
+}
+.colorlib-heading {
+	font-size: 18px;
+	margin-bottom: 1.2em;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	line-height: 1.5;
+	position: relative;
+}
+
+.colorlib-footer > p {
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 1;
+}
+
+.add-update-form {
+	margin: 20px 40px;
+}

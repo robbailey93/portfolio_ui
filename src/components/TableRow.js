@@ -16,24 +16,29 @@ class TableRow extends Component {
 	}
 	render() {
 		return (
-			<tr>
-				<td>{this.props.obj.first_name}</td>
-				<td>{this.props.obj.last_name}</td>
-				<td>{this.props.obj.email}</td>
-				<td>{this.props.obj.about}</td>
-				<td>
-					<Link
-						to={'/edit/' + this.props.obj._id}
-						className='btn btn-primary'>
-						Edit
-					</Link>
-				</td>
-				<td>
-					<button onClick={this.delete} className='btn btn-danger'>
-						Delete
-					</button>
-				</td>
-			</tr>
+			<React.Fragment>
+				<tr>
+					<td>{this.props.obj.first_name}</td>
+					<td>{this.props.obj.last_name}</td>
+					<td>{this.props.obj.email}</td>
+					<td>{this.props.obj.about}</td>
+					<td>
+						<Link
+							to={'/edit/' + this.props.obj._id}
+							//to={'/edit/' + this.props.obj._id}
+							className='btn btn-primary'>
+							Edit
+						</Link>
+					</td>
+					<td>
+						<button
+							onClick={this.delete}
+							className='btn btn-danger'>
+							Delete
+						</button>
+					</td>
+				</tr>
+			</React.Fragment>
 		);
 	}
 }

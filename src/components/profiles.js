@@ -1,30 +1,16 @@
 import React, { Component } from 'react';
 // import { buildUrl } from '../connections/urls';
-// import { isUserWhitespacable } from '@babel/types';
 
-//import ProfileInput from './admin-inputs/profile-input';
+//import { Jumbotron } from 'reactstrap';
 
-//import ProfileForm from './sub-profiles';
-
-import { Jumbotron } from 'reactstrap';
+//import axios from 'axios';
+import ProfileList from './profile-list-comp';
+//import TableRow from './TableRow';
 
 class Profiles extends Component {
-	// constructor(props) {
-	// 	super(props);
-	// 	this.state = {
-	// 		data: null,
-	// 	};
-	// }
-
-	// componentDidMount() {
-	// 	fetch('http://localhost:8080/routes/profiles.js')
-	// 		.then(response => response.json())
-	// 		.then(data => this.setState({ data }));
-	// }
-
 	render() {
 		return (
-			<div>
+			<div id='colorlib-main'>
 				<section className='colorlib-about' data-section='about'>
 					<div className='colorlib-narrow-content'>
 						<div className='row'>
@@ -33,56 +19,8 @@ class Profiles extends Component {
 									className='row row-bottom-padded-sm animate-box'
 									data-animate-effect='fadeInLeft'>
 									<div className='col-sm-12'>
-										<Jumbotron>
-											<h2>
-												Testing Bootstrap Components
-											</h2>
-										</Jumbotron>
-
 										<div className='about-desc'>
-											<span className='heading-meta'></span>
-											<h2 className='colorlib-heading'>
-												About Me
-											</h2>
-
-											<p>
-												Front End Developer with over 4
-												years of experience actively
-												collaborating with development
-												teams to produce and modernize
-												world-class, enterprise-quality
-												web applications, web portals
-												and web sites. I am a proponent
-												of user-centered design as an
-												integral part of application
-												development, especially with how
-												that translates to implementing
-												Mobile Responsive solutions that
-												are usable and possible to
-												implement.
-											</p>
-											<p>
-												I have experience collaborating
-												across teams (Product, Design,
-												QA, Marketing, and Engineering)
-												to define, design and test
-												applications and solutions as a
-												part of the agile development
-												process. I am experienced in
-												leveraging user stories and
-												designs to build and maintain
-												viable products and applications
-												via code remediation, bug fixes,
-												and continual improvement.
-											</p>
-											<p>
-												I am accustomed to working in a
-												continuous delivery / continuous
-												integration environment;
-												leveraging pipelines and
-												automated tests for optimal
-												deployment.
-											</p>
+											<ProfileList></ProfileList>
 										</div>
 									</div>
 								</div>
@@ -96,9 +34,9 @@ class Profiles extends Component {
 							<div
 								className='col-md-6 col-md-offset-3 col-md-pull-3 animate-box'
 								data-animate-effect='fadeInLeft'>
-								<span className='heading-meta'>What I do?</span>
+								{/* <span className='heading-meta'>What I do?</span> */}
 								<h2 className='colorlib-heading'>
-									Here are some of my expertise
+									Here are some of my skills and knowledge
 								</h2>
 							</div>
 						</div>
@@ -106,14 +44,15 @@ class Profiles extends Component {
 							<div className='col-md-4 text-center animate-box'>
 								<div className='services color-1'>
 									<span className='icon'>
-										<i className='icon-bulb' />
+										{/* <i className='icon-display' /> */}
+										<i className='fas fa-camera'></i>
 									</span>
 									<div className='desc'>
 										<h3>Web Development </h3>
 										<p>
 											I have experience building websites
-											and chrome extentions using
-											JavaScript,React,HTML,CSS
+											and web applications using HTML5,
+											CSS3, SASS, JavaScript,and React
 										</p>
 									</div>
 								</div>

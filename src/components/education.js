@@ -1,36 +1,36 @@
 import React, { Component } from 'react';
-import { buildUrl } from '../connections/urls';
+// import { buildUrl } from '../connections/urls';
 // const cors = require('cors');
 
 class Education extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			school: '',
-			course_of_study: '',
-			is_complete: '',
-			additional_info: '',
-		};
-	}
+	// constructor(props) {
+	// 	super(props);
+	// 	this.state = {
+	// 		school: '',
+	// 		course_of_study: '',
+	// 		is_complete: '',
+	// 		additional_info: '',
+	// 	};
+	// }
 
-	componentDidMount() {
-		let url = buildUrl('education');
-		fetch(url)
-			.then(res => res.json())
-			.then(json => {
-				this.setState({
-					school: json,
-					course_of_study: json,
-					is_complete: json,
-					additional_info: json,
-				});
-			});
-	}
+	// componentDidMount() {
+	// 	let url = buildUrl('education');
+	// 	fetch(url)
+	// 		.then(res => res.json())
+	// 		.then(json => {
+	// 			this.setState({
+	// 				school: json,
+	// 				course_of_study: json,
+	// 				is_complete: json,
+	// 				additional_info: json,
+	// 			});
+	// 		});
+	// }
 
 	render() {
 		return (
-			<div>
-				<section className='colorlib-work' data-section='projects'>
+			<div id='colorlib-main'>
+				<section className='colorlib-education' data-section='projects'>
 					<div className='colorlib-narrow-content'>
 						<div className='row'>
 							<div

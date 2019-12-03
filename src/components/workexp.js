@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 
-export default class WorkExperience extends Component {
+class WorkExperience extends Component {
 	render() {
 		return (
-			<div>
-				<section
-					className='colorlib-experience'
-					data-section='timeline'>
+			<div id='colorlib-main'>
+				<section className='colorlib-work' data-section='timeline'>
 					<div className='colorlib-narrow-content'>
 						<div className='row'>
 							<div
@@ -136,3 +134,5 @@ export default class WorkExperience extends Component {
 		);
 	}
 }
+
+export default WorkExperience;

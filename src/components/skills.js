@@ -1,10 +1,19 @@
 import React, { Component } from 'react';
+//import React, { Component, useState } from 'react';
 
-export default class Skills extends Component {
+//import Skills from './skills';
+import SkillsList from './SkillsList';
+import SkillsModal from './SkillsModal';
+//import Button from 'react-bootstrap/Button';
+//import Modal from 'react-bootstrap/Modal';
+//import Jumbotron from 'react-bootstrap/Jumbotron';
+
+class Skills extends Component {
 	render() {
 		return (
-			<div>
-				<section className='colorlib-work' data-section='projects'>
+			<>
+				<div id='colorlib-main'>
+					{/* <section className='colorlib-skills' data-section='projects'>
 					<div className='colorlib-narrow-content'>
 						<div className='row'>
 							<div
@@ -17,8 +26,29 @@ export default class Skills extends Component {
 							</div>
 						</div>
 					</div>
-				</section>
-			</div>
+				</section> */}
+					<section className='colorlib-about' data-section='about'>
+						<div className='colorlib-narrow-content'>
+							<div className='row'>
+								<div className='col-sm-12'>
+									<div
+										className='row row-bottom-padded-sm animate-box'
+										data-animate-effect='fadeInLeft'>
+										<div className='col-sm-12'>
+											<div className='about-desc'>
+												<SkillsList></SkillsList>
+												<SkillsModal></SkillsModal>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</>
 		);
 	}
 }
+
+export default Skills;

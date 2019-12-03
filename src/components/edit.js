@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-// import { isUserWhitespacable } from '@babel/types';
 import axios from 'axios';
 import { buildUrl } from '../connections/urls';
 
-class Create extends Component {
+class Edit extends Component {
 	constructor(props) {
 		super(props);
 		this.onChangeFirstName = this.onChangeFirstName.bind(this);
@@ -18,6 +17,22 @@ class Create extends Component {
 			email: '',
 			about: '',
 		};
+	}
+
+	componentDidMount() {
+		axios
+			.get(buildUrl('profiles/') + this.props.match.params.id)
+			.then(response => {
+				this.setState({
+					first_name: response.data.first_name,
+					last_name: response.data.last_name,
+					email: response.data.email,
+					about: response.data.about,
+				});
+			})
+			.catch(function(error) {
+				console.log(error);
+			});
 	}
 
 	onChangeFirstName(e) {
@@ -49,27 +64,16 @@ class Create extends Component {
 			about: this.state.about,
 		};
 		axios
-			.post(buildUrl('profiles'), obj)
+			.put(buildUrl('profiles/') + this.props.match.params.id, obj)
 			.then(res => console.log(res.data));
-		// .then(res => res.json())
-		// .then(json => {
 
-		this.setState({
-			first_name: '',
-			last_name: '',
-			email: '',
-			about: '',
-			// first_name: json,
-			// last_name: json,
-			// email: json,
-			// about: json,
-		});
+		this.props.history.push('/index-list');
 	}
 
 	render() {
 		return (
-			<div className='container' style={{ marginTop: 10 }}>
-				<h3>Add New User</h3>
+			<div id='colorlib-main' style={{ marginTop: 10 }}>
+				<h3 align='center'>Update User</h3>
 				<form onSubmit={this.onSubmit}>
 					<div className='form-group'>
 						<label>First Name: </label>
@@ -111,7 +115,7 @@ class Create extends Component {
 					<div className='form-group'>
 						<input
 							type='submit'
-							value='Submit User'
+							value='Update User'
 							className='btn btn-success'
 						/>
 					</div>
@@ -121,4 +125,4 @@ class Create extends Component {
 	}
 }
 
-export default Create;
+export default Edit;

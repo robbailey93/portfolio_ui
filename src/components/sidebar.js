@@ -1,135 +1,84 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+//import Navbar from 'react-bootstrap/Navbar';
+import SidebarFooter from './sidebar-footer';
 
 class Sidebar extends Component {
 	render() {
 		return (
-			<div>
-				<div>
+			<aside id='colorlib-aside' className='border js-fullheight'>
+				<div className='text-center'>
+					<div
+						className='author-img'
+						style={{
+							backgroundImage: 'url(images/img_kirk.jpg)',
+						}}></div>
+					<h2 className='profile-name'>
+						Robert D. Bailey
+						{/* <Link to={'/profiles'}>Robert D. Bailey</Link> */}
+					</h2>
+					<div className='email'>
+						<i className='icon-mail'></i>{' '}
+						<a href='mailto:rob@bailey.net'>rob@bailey.net</a>
+					</div>
 					<nav
-						href='#navbar'
-						className='js-colorlib-nav-toggle colorlib-nav-toggle'
-						data-toggle='collapse'
-						data-target='#navbar'
-						aria-expanded='false'
-						aria-controls='navbar'>
-						<i />
-					</nav>
-					<aside id='colorlib-aside' className='border js-fullheight'>
-						<div className='text-center'>
-							<div
-								className='author-img'
-								style={{
-									backgroundImage: 'url(images/about.jpg)',
-								}}
-							/>
-							<h1 id='colorlib-logo'>
-								<a href='index.html'>Robert D. Bailey</a>
-							</h1>
-							<span className='email'>
-								<i className='icon-mail'></i>{' '}
-								<a href='mailto:rob@bailey.net'>
-									rob@bailey.net
-								</a>
-							</span>
-						</div>
-						<nav
-							id='colorlib-main-menu'
-							role='navigation'
-							className='navbar'>
-							<div id='navbar' className='collapse'>
-								<ul>
-									<li className='active'>
-										<a
-											href='about'
-											data-nav-section='about'>
-											Profile
-										</a>
-									</li>
-									<li>
-										<a
-											href='skills'
-											data-nav-section='skills'>
-											Skills
-										</a>
-									</li>
-									<li>
-										<a
-											href='projects'
-											data-nav-section='projects'>
-											Projects
-										</a>
-									</li>
-									<li>
-										<a
-											href='work-experience'
-											data-nav-section='work-experience'>
-											Work Experience
-										</a>
-									</li>
-									<li>
-										<a
-											href='education'
-											data-nav-section='education'>
-											Education
-										</a>
-									</li>
-									<li>
-										<a
-											href='#knowledge-base'
-											data-nav-section='knowledge-base'>
-											Knowledge Base
-										</a>
-									</li>
-								</ul>
-							</div>
-						</nav>
-						<nav id='colorlib-main-menu'>
+						id='colorlib-main-menu'
+						role='navigation'
+						className='navbar'>
+						<div id='navbar' className='collapse'>
 							<ul>
-								<li>
-									<a
-										href='https://www.linkedin.com/in/robbailey-web-dev'
-										target='_blank'
-										rel='noopener noreferrer'>
-										<i className='icon-linkedin2' />
-									</a>
+								<li className='nav-item'>
+									<Link to={'/profiles'} className='nav-link'>
+										About
+									</Link>
 								</li>
-								<li>
-									<a
-										href='https://github.com/robbailey93'
-										target='_blank'
-										rel='noopener noreferrer'>
-										<i className='icon-github'></i>
-									</a>
+								<li className='nav-item'>
+									<Link to={'/skills'} className='nav-link'>
+										Skills
+									</Link>
+								</li>
+								<li className='nav-item'>
+									<Link to={'/projects'} className='nav-link'>
+										Projects
+									</Link>
+								</li>
+								<li className='nav-item'>
+									<Link to={'/workexp'} className='nav-link'>
+										Work Experience
+									</Link>
+								</li>
+								<li className='nav-item'>
+									<Link
+										to={'/education'}
+										className='nav-link'>
+										Education
+									</Link>
+								</li>
+								<li className='nav-item'>
+									<Link to={'/create'} className='nav-link'>
+										Create
+									</Link>
+								</li>
+								<li className='nav-item'>
+									<Link
+										to={'/index-list'}
+										className='nav-link'>
+										Index
+									</Link>
+								</li>
+								<li className='nav-item'>
+									<Link
+										to={'/knowledgebase'}
+										className='nav-link'>
+										Knowledge Base
+									</Link>
 								</li>
 							</ul>
-						</nav>
-						<div className='colorlib-footer'>
-							<p>
-								<small>
-									Made with{' '}
-									<i
-										className='icon-heart'
-										aria-hidden='true'
-									/>{' '}
-									and{' '}
-									<i
-										className='icon-brain'
-										aria-hidden='true'></i>
-									<br></br>
-									Thanks{' '}
-									<a
-										href='https://colorlib.com'
-										target='_blank'
-										rel='noopener noreferrer'>
-										Colorlib
-									</a>{' '}
-									for inspiration
-								</small>
-							</p>
 						</div>
-					</aside>
+					</nav>{' '}
+					<SidebarFooter></SidebarFooter>
 				</div>
-			</div>
+			</aside>
 		);
 	}
 }

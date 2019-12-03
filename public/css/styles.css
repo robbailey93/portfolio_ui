@@ -1,9 +1,9 @@
-@font-face {
+/* @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
   src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal; } */
 
 /* =======================================================
 *
@@ -35,7 +35,7 @@ p {
   margin-bottom: 1.5em; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #000;
+  color: #343a40;
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 30px 0; }
@@ -94,17 +94,25 @@ figure {
       transform: translateX(-300px);
       padding-top: 4em; } }
   #colorlib-aside .author-img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
     margin-bottom: 30px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%; }
+
+    #colorlib-aside .profile-name h2 a {
+      display: block;
+      font-size: 30px;
+      padding: 10px;
+      font-weight: 400;
+      color: #343a40; }
   #colorlib-aside .email {
     display: block;
-    font-size: 12px;}
+    font-size: 12px;
+    padding-top: 10px;}
   #colorlib-aside .number {
     display: block;
     margin-bottom: 2em;
@@ -399,13 +407,13 @@ body.offcanvas {
       padding-top: 5em;
       padding-bottom: 8em; } }
 
-.author-img {
+/* .author-img {
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
   position: relative; 
   transform: rotate(180deg);
-}
+} */
 
 .colorlib-heading {
   font-size: 18px;

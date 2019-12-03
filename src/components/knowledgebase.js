@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
-export default class KnowledgeBase extends Component {
+class KnowledgeBase extends Component {
 	render() {
 		return (
-			<div>
+			<div id='colorlib-main'>
+				>
 				<section className='colorlib-work' data-section='projects'>
 					<div className='colorlib-narrow-content'>
 						<div className='row'>
@@ -22,3 +23,5 @@ export default class KnowledgeBase extends Component {
 		);
 	}
 }
+
+export default KnowledgeBase;

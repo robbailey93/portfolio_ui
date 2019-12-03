@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { buildUrl } from '../connections/urls';
 
-class Edit extends Component {
+class Create extends Component {
 	constructor(props) {
 		super(props);
 		this.onChangeFirstName = this.onChangeFirstName.bind(this);
@@ -17,22 +17,6 @@ class Edit extends Component {
 			email: '',
 			about: '',
 		};
-	}
-
-	componentDidMount() {
-		axios
-			.get(buildUrl('profiles/') + this.props.match.params.id)
-			.then(response => {
-				this.setState({
-					first_name: response.data.first_name,
-					last_name: response.data.last_name,
-					email: response.data.email,
-					about: response.data.about,
-				});
-			})
-			.catch(function(error) {
-				console.log(error);
-			});
 	}
 
 	onChangeFirstName(e) {
@@ -64,16 +48,27 @@ class Edit extends Component {
 			about: this.state.about,
 		};
 		axios
-			.put(buildUrl('profiles/') + this.props.match.params.id, obj)
+			.post(buildUrl('profiles'), obj)
 			.then(res => console.log(res.data));
+		// .then(res => res.json())
+		// .then(json => {
 
-		this.props.history.push('/index');
+		this.setState({
+			first_name: '',
+			last_name: '',
+			email: '',
+			about: '',
+			// first_name: json,
+			// last_name: json,
+			// email: json,
+			// about: json,
+		});
 	}
 
 	render() {
 		return (
-			<div style={{ marginTop: 10 }}>
-				<h3 align='center'>Update User</h3>
+			<div id='colorlib-main' style={{ marginTop: 10 }}>
+				<h3>Add New User</h3>
 				<form onSubmit={this.onSubmit}>
 					<div className='form-group'>
 						<label>First Name: </label>
@@ -115,7 +110,7 @@ class Edit extends Component {
 					<div className='form-group'>
 						<input
 							type='submit'
-							value='Update User'
+							value='Submit User'
 							className='btn btn-success'
 						/>
 					</div>
@@ -125,4 +120,4 @@ class Edit extends Component {
 	}
 }
 
-export default Edit;
+export default Create;
