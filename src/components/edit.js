@@ -72,7 +72,7 @@ class Edit extends Component {
 
 	render() {
 		return (
-			<div id='colorlib-main' style={{ marginTop: 10 }}>
+			<div id='portfolio-main' style={{ marginTop: 10 }}>
 				<h3 align='center'>Update User</h3>
 				<form onSubmit={this.onSubmit}>
 					<div className='form-group'>

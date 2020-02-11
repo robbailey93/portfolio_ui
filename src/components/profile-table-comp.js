@@ -36,10 +36,10 @@ class ProfileTable extends Component {
 				<br />
 				<br />
 
-				<h2 className='colorlib-heading'>
+				<h2 className='portfolio-heading'>
 					{this.props.obj.first_name} {this.props.obj.last_name}
 				</h2>
-				<div className='colorlib-sub-heading'>
+				<div className='portfolio-sub-heading'>
 					{this.props.obj.email}
 				</div>
 				<p>{this.props.obj.about}</p>

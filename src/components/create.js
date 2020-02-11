@@ -67,7 +67,7 @@ class Create extends Component {
 
 	render() {
 		return (
-			<div id='colorlib-main' style={{ marginTop: 10 }}>
+			<div id='portfolio-main' style={{ marginTop: 10 }}>
 				<h3>Add New User</h3>
 				<form onSubmit={this.onSubmit}>
 					<div className='form-group'>

@@ -6,12 +6,12 @@ import SidebarFooter from './sidebar-footer';
 class Sidebar extends Component {
 	render() {
 		return (
-			<aside id='colorlib-aside' className='border js-fullheight'>
+			<aside id='portfolio-aside' className='border js-fullheight'>
 				<div className='text-center'>
 					<div
 						className='author-img'
 						style={{
-							backgroundImage: 'url(images/img_kirk.jpg)',
+							backgroundImage: 'url(images/about.jpg)',
 						}}></div>
 					<h2 className='profile-name'>
 						Robert D. Bailey
@@ -22,7 +22,7 @@ class Sidebar extends Component {
 						<a href='mailto:rob@bailey.net'>rob@bailey.net</a>
 					</div>
 					<nav
-						id='colorlib-main-menu'
+						id='portfolio-main-menu'
 						role='navigation'
 						className='navbar'>
 						<div id='navbar' className='collapse'>
@@ -38,7 +38,7 @@ class Sidebar extends Component {
 									</Link>
 								</li>
 								<li className='nav-item'>
-									<Link to={'/projects'} className='nav-link'>
+									<Link to={'/projects-comp'} className='nav-link'>
 										Projects
 									</Link>
 								</li>
@@ -54,7 +54,7 @@ class Sidebar extends Component {
 										Education
 									</Link>
 								</li>
-								<li className='nav-item'>
+								{/* <li className='nav-item'>
 									<Link to={'/create'} className='nav-link'>
 										Create
 									</Link>
@@ -72,7 +72,7 @@ class Sidebar extends Component {
 										className='nav-link'>
 										Knowledge Base
 									</Link>
-								</li>
+								</li> */}
 							</ul>
 						</div>
 					</nav>{' '}

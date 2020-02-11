@@ -41,7 +41,7 @@ class TopNavbar extends Component {
 						<li className='nav-item'>
 							<NavLink
 								activeStyle={{ color: 'red' }}
-								to={'/profiles'}
+								to={'/profiles-comp'}
 								className='nav-link'>
 								Profiles
 							</NavLink>

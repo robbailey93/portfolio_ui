@@ -27,7 +27,7 @@ class SkillsIndex extends Component {
 
 	render() {
 		return (
-			<section id='colorlib-main'>
+			<section id='portfolio-main'>
 				<h3 align='center'>Skills List</h3>
 				<table
 					className='table table-striped'

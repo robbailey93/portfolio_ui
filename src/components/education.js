@@ -29,17 +29,16 @@ class Education extends Component {
 
 	render() {
 		return (
-			<div id='colorlib-main'>
-				<section className='colorlib-education' data-section='projects'>
-					<div className='colorlib-narrow-content'>
+			<div id='portfolio-main'>
+				<section className='portfolio-education' data-section='projects'>
+					<div className='portfolio-narrow-content'>
 						<div className='row'>
-							<div
-								className='col-md-6 col-md-offset-3 col-md-pull-3 animate-box'
+							<div className='col-md-6 col-md-offset-3 col-md-pull-3'
 								data-animate-effect='fadeInLeft'>
-								<span className='heading-meta'>EDU</span>
-								<h2 className='colorlib-heading animate-box'>
-									Education -fetch api here
+								<h2 className='portfolio-heading'>
+								Education
 								</h2>
+									<span className='heading-meta'>Coming soon</span>
 							</div>
 						</div>
 					</div>

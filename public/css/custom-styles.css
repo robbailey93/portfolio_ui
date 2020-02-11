@@ -6,7 +6,23 @@ body {
 	color: rgba(0, 0, 0, 0.7);
 }
 
-#colorlib-page {
+.services .icon i {
+    font-size: initial;
+    color: #fff;
+    z-index: 1;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ifontlg {
+	font-size: 3rem;
+}
+
+.ifontsm {
+	font-size: 1rem;
+}
+
+#portfolio-page {
 	font-family: 'Quicksand', Arial, sans-serif;
 	font-weight: 400;
 	font-size: 15px;
@@ -15,47 +31,56 @@ body {
 	top: 58px;
 }
 
-#colorlib-aside .author-img {
-	width: 190px;
-	height: 190px;
-	margin: 0 auto;
-	margin-bottom: 30px;
+#portfolio-aside .author-img {
+	width: 170px;
+	height: 170px;
+	margin: 0 auto 25px auto;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-ms-border-radius: 50%;
 	border-radius: 50%;
+	border: 4px solid #2c98f0;
+	/* box-shadow: 0px 0px 56px -8px rgba(0, 0, 0, 0.17); */
+	box-shadow: 0px 0px 61px 4px rgba(0, 0, 0, 0.4);
 }
 .author-img {
 	background-size: cover;
-	background-position: center left;
+	background-position: 80% 50%;
 	background-repeat: no-repeat;
-	position: relative;
-	/* transform: rotate(180deg); */
+	transform: rotateX(180deg);
 }
 
-#colorlib-aside .profile-name h2 a {
+#portfolio-aside .profile-name h2 a {
 	display: block;
 	font-size: 30px;
 	padding: 10px;
 	font-weight: 400;
 	color: #343a40;
 }
-#colorlib-aside .email {
+#portfolio-aside .email {
 	display: block;
 	font-size: 12px;
 	padding-top: 10px;
 }
-#colorlib-aside .number {
+#portfolio-aside .number {
 	display: block;
 	margin-bottom: 2em;
 	font-size: 12px;
+}
+
+.portfolio-experience, .portfolio-skills, .portfolio-education, .portfolio-blog, .portfolio-work, .portfolio-about, .portfolio-services, .portfolio-contact {
+    padding-top: 0.67rem;
+    padding-bottom: 1.5rem;
+    clear: both;
+    width: 100%;
+    display: block;
 }
 
 .dynamic-content {
 	margin: 20px 0;
 }
 
-.colorlib-heading-new h2 {
+.portfolio-heading-new h2 {
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 18px;
 	margin-bottom: 1.5em;
@@ -67,7 +92,7 @@ body {
 	position: relative;
 }
 
-.colorlib-sub-heading {
+/* .portfolio-sub-heading {
 	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 15px;
 	margin-bottom: 15px;
@@ -77,18 +102,11 @@ body {
 	line-height: 1.5;
 	color: #343a40;
 	position: relative;
-}
-.colorlib-heading {
-	font-size: 18px;
-	margin-bottom: 1.2em;
-	font-weight: 700;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	line-height: 1.5;
-	position: relative;
-}
+} */
 
-.colorlib-footer > p {
+
+
+.portfolio-footer > p {
 	margin-top: 0;
 	margin-bottom: 0;
 	line-height: 1;
@@ -96,4 +114,75 @@ body {
 
 .add-update-form {
 	margin: 20px 40px;
+}
+
+.portfolio-heading {
+	font-family: "Quicksand", Arial, sans-serif;
+	font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 2rem;
+	position: relative;
+	color: #212529;
+}
+
+.portfolio-sub-heading,
+.heading-meta {
+	font-family: "Quicksand", Arial, sans-serif;
+	margin-bottom: 1.2rem;
+    display: block;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #999999;
+	font-weight: 400;
+	line-height: 2rem;
+    letter-spacing: 5px;
+}
+
+.row-pt-md {
+    padding-top: 4rem;
+}
+
+.services .desc h3 {
+	font-family: "Quicksand", Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
+    font-size: 1.3rem;
+    font-family: "Quicksand", Arial, sans-serif;
+	font-weight: 500;
+	line-height: 1rem;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h3 {
+    font-size: 1.2rem;
+    font-family: "Quicksand", Arial, sans-serif;
+	font-weight: 400;
+	line-height: 1rem;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label .start-end-date {
+    -webkit-opacity: .4;
+    -moz-opacity: .4;
+    opacity: .4;
+    -ms-filter: alpha(opacity=40);
+    filter: alpha(opacity=40);
+	font-size: 0.9rem;
+	line-height: 1rem;
+	margin-bottom: 0.9rem;
+}
+
+.portfolio-footer {
+	margin-top: 15px;;
+}
+
+.smaller {
+	font-size: 0.5em;;
 }

@@ -42,7 +42,7 @@ class SkillsAdmin extends Component {
 	render() {
 		return (
 			<div
-				id='colorlib-main'
+				id='portfolio-main'
 				className='add-update-form'
 				style={{ marginTop: 10 }}>
 				<h3>Add New Skill</h3>

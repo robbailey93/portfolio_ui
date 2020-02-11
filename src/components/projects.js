@@ -1,24 +1,24 @@
 import React, { Component } from 'react';
 
-export default class Projects extends Component {
+// export default class Projects extends Component {
 	render() {
 		return (
-			<div id='colorlib-main'>
-				<section className='colorlib-projects' data-section='projects'>
-					<div className='colorlib-narrow-content'>
+			<div id='portfolio-main'>
+				<section className='portfolio-projects' data-section='projects'>
+					<div className='portfolio-narrow-content'>
 						<div className='row'>
 							<div
-								className='col-md-6 col-md-offset-3 col-md-pull-3 animate-box'
+								className='col-md-6 col-md-offset-3 col-md-pull-3'
 								data-animate-effect='fadeInLeft'>
 								<span className='heading-meta'>My Work</span>
-								<h2 className='colorlib-heading animate-box'>
+								<h2 className='portfolio-heading'>
 									Recent Projects
 								</h2>
 							</div>
 						</div>
 						<div className='row'>
 							<div
-								className='col-md-4 animate-box'
+								className='col-md-4'
 								data-animate-effect='fadeInLeft'>
 								<div
 									className='project'
@@ -56,7 +56,7 @@ export default class Projects extends Component {
 								</div>
 							</div>
 							<div
-								className='col-md-4 animate-box'
+								className='col-md-4'
 								data-animate-effect='fadeInRight'>
 								<div
 									className='project'
@@ -94,7 +94,7 @@ export default class Projects extends Component {
 								</div>
 							</div>
 							<div
-								className='col-md-4 animate-box'
+								className='col-md-4'
 								data-animate-effect='fadeInTop'>
 								<div
 									className='project'
@@ -132,7 +132,7 @@ export default class Projects extends Component {
 								</div>
 							</div>
 							<div
-								className='col-md-4 animate-box'
+								className='col-md-4'
 								data-animate-effect='fadeInBottom'>
 								<div
 									className='project'
@@ -170,7 +170,7 @@ export default class Projects extends Component {
 								</div>
 							</div>
 							<div
-								className='col-md-4 animate-box'
+								className='col-md-4'
 								data-animate-effect='fadeInLeft'>
 								<div
 									className='project'
@@ -208,7 +208,7 @@ export default class Projects extends Component {
 								</div>
 							</div>
 							<div
-								className='col-md-4 animate-box'
+								className='col-md-4'
 								data-animate-effect='fadeInRight'>
 								<div
 									className='project'
@@ -247,7 +247,7 @@ export default class Projects extends Component {
 							</div>
 						</div>
 						{/* <div className='row'>
-							<div className='col-md-12 animate-box'>
+							<div className='col-md-12'>
 								<p>
 									<a
 										href='#'
@@ -260,62 +260,62 @@ export default class Projects extends Component {
 					</div>
 				</section>
 
-				<div
-					id='colorlib-counter'
-					className='colorlib-counters'
-					// style={{ background: url(images / cover_bg_1.jpg) }}
+				{/* <div
+					id='portfolio-counter'
+					className='portfolio-counters'
+					style={{ background: url(images / cover_bg_1.jpg) }}
 					data-stellar-background-ratio='0.5'>
 					<div className='overlay'></div>
-					<div className='colorlib-narrow-content'>
+					<div className='portfolio-narrow-content'>
 						<div className='row'></div>
 						<div className='row'>
-							<div className='col-md-3 text-center animate-box'>
+							<div className='col-md-3 text-center'>
 								<span
-									className='colorlib-counter js-counter'
+									className='portfolio-counter js-counter'
 									data-from='0'
 									data-to='309'
 									data-speed='5000'
 									data-refresh-interval='50'></span>
-								<span className='colorlib-counter-label'>
+								<span className='portfolio-counter-label'>
 									Cups of coffee
 								</span>
 							</div>
-							<div className='col-md-3 text-center animate-box'>
+							<div className='col-md-3 text-center'>
 								<span
-									className='colorlib-counter js-counter'
+									className='portfolio-counter js-counter'
 									data-from='0'
 									data-to='356'
 									data-speed='5000'
 									data-refresh-interval='50'></span>
-								<span className='colorlib-counter-label'>
+								<span className='portfolio-counter-label'>
 									Projects
 								</span>
 							</div>
-							<div className='col-md-3 text-center animate-box'>
+							<div className='col-md-3 text-center'>
 								<span
-									className='colorlib-counter js-counter'
+									className='portfolio-counter js-counter'
 									data-from='0'
 									data-to='30'
 									data-speed='5000'
 									data-refresh-interval='50'></span>
-								<span className='colorlib-counter-label'>
+								<span className='portfolio-counter-label'>
 									Clients
 								</span>
 							</div>
-							<div className='col-md-3 text-center animate-box'>
+							<div className='col-md-3 text-center'>
 								<span
-									className='colorlib-counter js-counter'
+									className='portfolio-counter js-counter'
 									data-from='0'
 									data-to='10'
 									data-speed='5000'
 									data-refresh-interval='50'></span>
-								<span className='colorlib-counter-label'>
+								<span className='portfolio-counter-label'>
 									Partners
 								</span>
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		);
 	}

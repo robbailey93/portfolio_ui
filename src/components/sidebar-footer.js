@@ -5,14 +5,14 @@ import { faCoffee, faHeart } from '@fortawesome/free-solid-svg-icons';
 class SidebarFooter extends Component {
 	render() {
 		return (
-			<div className='colorlib-footer'>
-				<p>
+			<div className='portfolio-footer'>
+				<p className='smaller'>
 					<small>
 						Made with <FontAwesomeIcon icon={faHeart} /> and{' '}
 						<FontAwesomeIcon icon={faCoffee} />
 					</small>
 				</p>
-				<p>
+				<p className='smaller'>
 					<small>
 						Thanks{' '}
 						<a

@@ -15,7 +15,7 @@ function SkillsDemoMod() {
 		<>
 			<div>
 				<Button variant='primary' onClick={handleShow}>
-					Launch demo modal
+					Add Skills
 				</Button>
 
 				<Modal
@@ -29,9 +29,9 @@ function SkillsDemoMod() {
 						<Modal.Title>Modal heading</Modal.Title>
 					</Modal.Header>
 					<Modal.Body>
-						Woohoo, you're reading this text in a modal!
+						Text here
 						<SkillsAdmin></SkillsAdmin>
-						<SkillsIndex></SkillsIndex>
+						{/* <SkillsIndex></SkillsIndex> */}
 					</Modal.Body>
 					<Modal.Footer>
 						<Button variant='primary' onClick={handleClose}>

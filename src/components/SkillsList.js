@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { buildUrl } from '../connections/urls';
-//import Button from 'react-bootstrap/Button';
-//import Modal from 'react-bootstrap/Modal';
 
 class SkillsList extends Component {
 	constructor(props) {
@@ -65,28 +63,28 @@ class SkillsList extends Component {
 
 		return (
 			<>
-				<section className='colorlib-skills' data-section='skills'>
-					<div className='colorlib-narrow-content'>
+				<section className='portfolio-skills' data-section='skills'>
+					<div className='portfolio-narrow-content'>
 						<div className='row'>
 							<div
-								className='col-md-6 col-md-offset-3 col-md-pull-3 animate-box'
+								className='col-md-6 col-md-offset-3 col-md-pull-3'
 								data-animate-effect='fadeInLeft'>
-								<h2 className='colorlib-heading animate-box'>
+								<h2 className='portfolio-heading'>
 									My Skills
 								</h2>
 							</div>
 						</div>
 						<div className='row'>
 							<div
-								className='col-sm-6 animate-box'
+								className='col-sm-6'
 								data-animate-effect='fadeInLeft'>
 								<div className='progress-wrap'>
 									<h3>{allSkills}</h3>
 								</div>
 							</div>
 
-							<div
-								className='col-sm-6 animate-box'
+							{/* <div
+								className='col-sm-6'
 								data-animate-effect='fadeInLeft'>
 								<div className='progress-wrap'>
 									<div className='progress'>
@@ -102,10 +100,10 @@ class SkillsList extends Component {
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> */}
 
 							{/* <div
-								className='col-md-6 animate-box'
+								className='col-md-6'
 								data-animate-effect='fadeInLeft'>
 								<div className='progress-wrap'>
 									<h3>
@@ -155,20 +153,20 @@ class SkillsList extends Component {
 					</Modal>
 				</div> */}
 
-				{/* <section className='colorlib-skills' data-section='skills'>
-					<div className='colorlib-narrow-content'>
+				{/* <section className='portfolio-skills' data-section='skills'>
+					<div className='portfolio-narrow-content'>
 						<div className='row'>
 							<div
-								className='col-md-6 col-md-offset-3 col-md-pull-3 animate-box'
+								className='col-md-6 col-md-offset-3 col-md-pull-3'
 								data-animate-effect='fadeInLeft'>
-								<h2 className='colorlib-heading animate-box'>
+								<h2 className='portfolio-heading'>
 									Not My Skills
 								</h2>
 							</div>
 						</div>
 						<div className='row'> */}
 				{/* <div
-								className='col-md-12 animate-box'
+								className='col-md-12'
 								data-animate-effect='fadeInLeft'>
 								<p>
 									The Big Oxmox advised her not to do so,
@@ -180,7 +178,7 @@ class SkillsList extends Component {
 								</p>
 							</div> */}
 				{/* <div
-								className='col-md-6 animate-box'
+								className='col-md-6'
 								data-animate-effect='fadeInLeft'>
 								<div className='progress-wrap'>
 									<h3>Photoshop</h3>
@@ -198,7 +196,7 @@ class SkillsList extends Component {
 								</div>
 							</div>
 							<div
-								className='col-md-6 animate-box'
+								className='col-md-6'
 								data-animate-effect='fadeInRight'>
 								<div className='progress-wrap'>
 									<h3>jQuery</h3>
@@ -216,7 +214,7 @@ class SkillsList extends Component {
 								</div>
 							</div>
 							<div
-								className='col-md-6 animate-box'
+								className='col-md-6'
 								data-animate-effect='fadeInLeft'>
 								<div className='progress-wrap'>
 									<h3>HTML5</h3>
@@ -234,7 +232,7 @@ class SkillsList extends Component {
 								</div>
 							</div>
 							<div
-								className='col-md-6 animate-box'
+								className='col-md-6'
 								data-animate-effect='fadeInRight'>
 								<div className='progress-wrap'>
 									<h3>CSS3</h3>
@@ -252,7 +250,7 @@ class SkillsList extends Component {
 								</div>
 							</div>
 							<div
-								className='col-md-6 animate-box'
+								className='col-md-6'
 								data-animate-effect='fadeInLeft'>
 								<div className='progress-wrap'>
 									<h3>WordPress</h3>
@@ -270,7 +268,7 @@ class SkillsList extends Component {
 								</div>
 							</div>
 							<div
-								className='col-md-6 animate-box'
+								className='col-md-6'
 								data-animate-effect='fadeInRight'>
 								<div className='progress-wrap'>
 									<h3>SEO</h3>

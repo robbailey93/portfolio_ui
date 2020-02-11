@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 // import { buildUrl } from '../connections/urls';
 
-//import { Jumbotron } from 'reactstrap';
-
 //import axios from 'axios';
 import ProfileList from './profile-list-comp';
 //import TableRow from './TableRow';
@@ -10,13 +8,13 @@ import ProfileList from './profile-list-comp';
 class Profiles extends Component {
 	render() {
 		return (
-			<div id='colorlib-main'>
-				<section className='colorlib-about' data-section='about'>
-					<div className='colorlib-narrow-content'>
+			<div id='portfolio-main'>
+				<section className='portfolio-about' data-section='about'>
+					<div className='portfolio-narrow-content'>
 						<div className='row'>
 							<div className='col-sm-12'>
 								<div
-									className='row row-bottom-padded-sm animate-box'
+									className='row row-bottom-padded-sm'
 									data-animate-effect='fadeInLeft'>
 									<div className='col-sm-12'>
 										<div className='about-desc'>
@@ -28,53 +26,52 @@ class Profiles extends Component {
 						</div>
 					</div>
 				</section>
-				<section className='colorlib-about'>
-					<div className='colorlib-narrow-content'>
+				<section className='portfolio-about'>
+					<div className='portfolio-narrow-content'>
 						<div className='row'>
 							<div
-								className='col-md-6 col-md-offset-3 col-md-pull-3 animate-box'
+								className='col-md-9 col-md-offset-3 col-md-pull-3'
 								data-animate-effect='fadeInLeft'>
-								{/* <span className='heading-meta'>What I do?</span> */}
-								<h2 className='colorlib-heading'>
-									Here are some of my skills and knowledge
+								<h2 className='portfolio-heading'>
+									Highlights of experience, knowledge and skills
 								</h2>
 							</div>
 						</div>
 						<div className='row row-pt-md'>
-							<div className='col-md-4 text-center animate-box'>
+							<div className='col-md-4 text-center'>
 								<div className='services color-1'>
-									<span className='icon'>
-										{/* <i className='icon-display' /> */}
-										<i className='fas fa-camera'></i>
+								<span className='icon'>
+										{/* <i className='fa fa-desktop' aria-hidden='true'></i> */}
+										<i class='fa fa-terminal fa-lg' aria-hidden='true'></i>
 									</span>
 									<div className='desc'>
-										<h3>Web Development </h3>
+										<h3>Software Engineering </h3>
+										<p>
+											I have experience with the software development process.
+											Building web applications through a collaborative 
+											effort by partnering with teams from Product, Design, UI/UX Development and Testing, QA and Deployment.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div className='col-md-4 text-center'>
+								<div className='services color-3'>
+									<span className='icon'>
+										{/* <i className='fa fa-desktop' aria-hidden='true'></i> */}
+										<i class='fa fa-file-o fa-lg' aria-hidden='true'></i>
+									</span>
+									<div className='desc'>
+									<h3>Web Development </h3>
 										<p>
 											I have experience building websites
 											and web applications using HTML5,
-											CSS3, SASS, JavaScript,and React
+											CSS3, SASS, JavaScript and React
 										</p>
 									</div>
 								</div>
 							</div>
-							<div className='col-md-4 text-center animate-box'>
-								<div className='services color-3'>
-									<span className='icon'>
-										<i className='icon-phone3' />
-									</span>
-									<div className='desc'>
-										<h3>
-											Data Structures &amp; Algorithms
-										</h3>
-										<p>
-											As coming from the CS background, I
-											have good grasp over fundamental
-											concepts of DSA
-										</p>
-									</div>
-								</div>
-							</div>
-							<div className='col-md-4 text-center animate-box'>
+							
+							{/* <div className='col-md-4 text-center'>
 								<div className='services color-5'>
 									<span className='icon'>
 										<i className='icon-data' />
@@ -88,8 +85,8 @@ class Profiles extends Component {
 										</p>
 									</div>
 								</div>
-							</div>
-							<div className='col-md-4 text-center animate-box'>
+							</div> */}
+							{/* <div className='col-md-4 text-center'>
 								<div className='services color-2'>
 									<span className='icon'>
 										<i className='icon-data' />
@@ -99,28 +96,26 @@ class Profiles extends Component {
 										<p>Jenkins , Kubernetes , Docker </p>
 									</div>
 								</div>
-							</div>
-							<div className='col-md-4 text-center animate-box'>
+							</div> */}
+							<div className='col-md-4 text-center'>
 								<div className='services color-4'>
 									<span className='icon'>
-										<i className='icon-layers2' />
+										{/* <i className='fa fa-fw fa-desktop' /> */}
+										<i class="fa fa-user-o fa-lg" aria-hidden="true"></i>
 									</span>
 									<div className='desc'>
-										<h3>Graphic Design</h3>
-										<p>My friend knows .. P</p>
+										<h3>UI/UX Design and Testing</h3>
+										<p>Understanding of design principles, guidelines and standards. Experience conducting Usability Tests.</p>
 									</div>
 								</div>
 							</div>
-							{/* <div className='col-md-4 text-center animate-box'>
+							{/* <div className='col-md-4 text-center'>
 								<div className='services color-6'>
 									<span className='icon'>
 										<i className='icon-phone3' />
 									</span>
 									<div className='desc'>
-										<h3>Digital Marketing</h3>
-										<p>
-											I use Instagram eight hours a day :){' '}
-										</p>
+										
 									</div>
 								</div>
 							</div> */}

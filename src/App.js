@@ -7,14 +7,14 @@ import Sidebar from './components/sidebar';
 
 import Profiles from './components/profiles';
 import Skills from './components/skills';
-import Projects from './components/projects';
+import Projects from './components/projects-comp';
 import WorkExperience from './components/workexp';
 import Education from './components/education';
-import KnowledgeBase from './components/knowledgebase';
+// import KnowledgeBase from './components/knowledgebase';
 
-import Create from './components/create';
-import Edit from './components/edit';
-import IndexList from './components/index-list';
+// import Create from './components/create';
+// import Edit from './components/edit';
+// import IndexList from './components/index-list';
 
 //let focusedUser:'_id';
 // send focussed user id to page (child and sub-child)components through use of props
@@ -40,15 +40,15 @@ class App extends Component {
 
 				<Switch>
 					     
-					<Route path='/create' component={Create} />          
-					<Route path='/edit/:id' component={Edit} />
-					<Route path='/index-list' component={IndexList} />
+					{/* <Route path='/create' component={Create} />          
+					<Route path='/edit/:id' component={Edit} /> */}
+					{/* <Route path='/index-list' component={IndexList} /> */}
 					<Route path='/profiles/' component={Profiles} />
 					<Route path='/skills' component={Skills} />
 					<Route path='/workexp' component={WorkExperience} />
-					<Route path='/projects' component={Projects} />
+					<Route path='/projects-comp' component={Projects} />
 					<Route path='/education' component={Education} />
-					<Route path='/knowledgebase' component={KnowledgeBase} /> 
+					{/* <Route path='/knowledgebase' component={KnowledgeBase} />  */}
 				</Switch>
 			</Router>
 		);

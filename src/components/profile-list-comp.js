@@ -67,11 +67,11 @@ class ProfileList extends Component {
 		return (
 			<React.Fragment>
 				<div className='dynamic-content'>
-					<h2 className='colorlib-heading'>
+					<h2 className='portfolio-heading'>
 						{this.state.profile.first_name}{' '}
 						{this.state.profile.last_name}
 					</h2>
-					<div className='colorlib-sub-heading'>
+					<div className='portfolio-sub-heading'>
 						{this.state.profile.email}
 					</div>
 					<p>{this.state.profile.about}</p>

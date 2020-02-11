@@ -5,9 +5,9 @@ class MainSection extends Component {
 	render() {
 		return (
 			<Router>
-				<div id='colorlib-main'>
+				<div id='portfolio-main'>
 					<section>
-						<div className='colorlib-narrow-content'></div>
+						<div className='portfolio-narrow-content'></div>
 					</section>
 				</div>
 			</Router>
