@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 
 //import axios from 'axios';
 import ProfileList from './profile-list-comp';
-//import TableRow from './TableRow';
 
 class Profiles extends Component {
 	render() {
@@ -42,7 +41,7 @@ class Profiles extends Component {
 								<div className='services color-1'>
 								<span className='icon'>
 										{/* <i className='fa fa-desktop' aria-hidden='true'></i> */}
-										<i class='fa fa-terminal fa-lg' aria-hidden='true'></i>
+										<i className='fa fa-terminal fa-lg' aria-hidden='true'></i>
 									</span>
 									<div className='desc'>
 										<h3>Software Engineering </h3>
@@ -58,7 +57,7 @@ class Profiles extends Component {
 								<div className='services color-3'>
 									<span className='icon'>
 										{/* <i className='fa fa-desktop' aria-hidden='true'></i> */}
-										<i class='fa fa-file-o fa-lg' aria-hidden='true'></i>
+										<i className='fa fa-file-o fa-lg' aria-hidden='true'></i>
 									</span>
 									<div className='desc'>
 									<h3>Web Development </h3>
@@ -101,7 +100,7 @@ class Profiles extends Component {
 								<div className='services color-4'>
 									<span className='icon'>
 										{/* <i className='fa fa-fw fa-desktop' /> */}
-										<i class="fa fa-user-o fa-lg" aria-hidden="true"></i>
+										<i className="fa fa-user-o fa-lg" aria-hidden="true"></i>
 									</span>
 									<div className='desc'>
 										<h3>UI/UX Design and Testing</h3>

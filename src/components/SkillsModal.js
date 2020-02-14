@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import SkillsAdmin from './SkillsAdmin';
-import SkillsIndex from './SkillsIndex';
+//import SkillsIndex from './SkillsIndex';
 
 function SkillsDemoMod() {
 	const [show, setShow] = useState(false);

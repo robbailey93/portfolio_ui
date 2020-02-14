@@ -31,6 +31,21 @@ body {
 	top: 58px;
 }
 
+#portfolio-aside {
+    padding-top: 1em;
+    padding-bottom: 40px;
+    float: left;
+	width: 300px;
+	height: 100%;
+    position: fixed;
+    overflow: scroll;
+    z-index: 1001;
+    background: #f2f3f7;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
 #portfolio-aside .author-img {
 	width: 170px;
 	height: 170px;

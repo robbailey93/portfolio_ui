@@ -40,20 +40,20 @@ class SkillsList extends Component {
 			// need to add key to map output so each instance gets an id
 			<div key={skill._id}>
 				{skill.skill_name}
-				<div
+				{/* <div
 					className='progress-bar color-1'
 					role='progressbar'
 					aria-valuenow='75'
 					aria-valuemin='0'
 					aria-valuemax='100'
-					style={{ width: 75 + '%' }}></div>
+					style={{ width: 75 + '%' }}></div> */}
 			</div>
 		));
 
-		let skLevels = this.state.skill.map(skill => (
+	//	let skLevels = this.state.skill.map(skill => (
 			// need to add key to map output so each instance gets an id
-			<div key={skill._id}>{skill.skill_level}</div>
-		));
+	//		<div key={skill._id}>{skill.skill_level}</div>
+	//	));
 
 		// skillName() {
 		// 	return this.state.skill.skill_name.map(function(object, i) {

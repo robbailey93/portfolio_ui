@@ -32,7 +32,7 @@ export default class Projects extends Component {
 											</div>
 											<div className='timeline-label'>
 												<h2>ReactJS Portfolio Project</h2>
-												<p>
+										
                                                     <ul>
                                                         <li>ReactJS</li>
                                                         <li>NodeJS</li>
@@ -40,13 +40,13 @@ export default class Projects extends Component {
                                                         <li>Axios</li>
                                                         <li>MongoDB</li>
                                                     </ul>
-                                                </p>
+                                             
 												<p></p>
 												<p></p>
 											</div>
 										</div>
 									</article>
-									<article
+									{/* <article
 										className='timeline-entry'
 										data-animate-effect='fadeInTop'>
 										<div className='timeline-entry-inner'>
@@ -60,8 +60,8 @@ export default class Projects extends Component {
 												<p></p>
 											</div>
 										</div>
-									</article>
-									<article
+									</article> */}
+									{/* <article
 										className='timeline-entry'
 										data-animate-effect='fadeInLeft'>
 										<div className='timeline-entry-inner'>
@@ -75,7 +75,7 @@ export default class Projects extends Component {
 												<p></p>
 											</div>
 										</div>
-									</article>
+									</article> */}
 									<article
 										className='timeline-entry begin'
 										data-animate-effect='fadeInBottom'>
