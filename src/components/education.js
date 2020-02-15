@@ -58,7 +58,7 @@ class Education extends Component {
 													<div className='start-end-date'>
 													September 2019 - November 2019
 													</div>
-													<p>After testing out of Level 1, completed the Level 2 course, comprised of 96 classroom hours of hands-on learning of advanced web development technologies, such as advanced front-end development, the latest back-end server-side applications, and supporting data stores plus query languages. Technologies included:</p>
+													<p>After testing out of Level 1, completed the Level 2 course, comprised of 96 classroom hours of hands-on learning of advanced web development technologies, such as advanced front end development, the latest back end server-side applications, and supporting data stores plus query languages. Technologies included:</p>
 													
 														<ul>
 															<li>JavaScript</li>
@@ -115,7 +115,7 @@ class Education extends Component {
 											</div>
 											<div className='timeline-label'>
 												<h2>University of Hawaii at Manoa, Honolulu, HI</h2>
-												<h3>Web Development &amo; Design Certificate of Completion</h3>
+												<h3>Web Development &amp; Design Certificate of Completion</h3>
 													{/* <div className='start-end-date'>
 													August 2014 – December 2014
 													</div> */}
